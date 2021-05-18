@@ -52,7 +52,8 @@
     .mw-prefs-buttons,
     .mw-mmv-post-image,
     .mw-mmv-image-metadata,
-    .infobox {
+    .infobox,
+    h1, h2, h3, h4, h5, h6 {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
