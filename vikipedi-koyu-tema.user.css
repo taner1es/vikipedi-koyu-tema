@@ -561,6 +561,22 @@
     .ve-ui-citoidInspector-sourceSelect .oo-ui-optionWidget:hover {
         background-color: #bd9e00!important;
     }
+
+    /* begin - map section */
+    .leaflet-top,
+    .leaflet-pane {
+        background: #fff0!important;
+    }
+
+    .leaflet-bar * {
+        background-color: #a69d00!important;
+    }
+
+    .leaflet-bar *:hover {
+        background-color: #a64b00!important;
+    }
+
+    /* end - map section */
 }
 
 @-moz-document url-prefix("https://tr.wikipedia.org/wiki/Special:ContentTranslation"),
