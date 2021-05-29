@@ -58,7 +58,8 @@
     .mw-prefs-buttons,
     .mw-mmv-post-image,
     .mw-mmv-image-metadata,
-    .infobox {
+    .infobox,
+    .oo-ui-dropdownWidget-handle {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
@@ -286,7 +287,8 @@
         background: #00a1b0ad!important;
     }
 
-    #pagehistory li.selected {
+    #pagehistory li.selected,
+    .oo-ui-optionWidget-selected {
         outline-color: #0eff00!important;
         background-color: #00fff745!important;
     }
