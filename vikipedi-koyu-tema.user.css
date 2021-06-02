@@ -27,6 +27,7 @@
     figure *,
     table *,
     div > div > div > div > div,
+    div.flaggedrevs_preview,
     h1,
     h2,
     h3,
@@ -100,6 +101,10 @@
     #mp-upper *,
     #mp-lower * {
         border: 0px!important;
+    }
+
+    table.ambox-content {
+        border-left: 10px solid #f28500!important;
     }
 
     .flaggedrevs-unreviewed {
