@@ -62,7 +62,10 @@
     .mw-mmv-image-metadata,
     .infobox,
     .oo-ui-dropdownWidget-handle,
-    .warningbox {
+    .warningbox,
+    .oo-ui-popupWidget-popup,
+    .mw-echo-ui-notificationItemWidget,
+    .mw-echo-ui-notificationItemWidget * {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
@@ -77,8 +80,8 @@
         background-color: inherit!important;
         color: var(--color-1);
     }
-    
-    #centralNotice div{
+
+    #centralNotice div {
         background-image: none!important;
         background-color: inherit!important;
     }
@@ -146,6 +149,11 @@
 
     .suggestions *:hover {
         background-color: #ab4a00!important;
+    }
+
+    .oo-ui-popupWidget-body > div > a:hover,
+    .oo-ui-popupWidget-body > div > a:hover *:not(.oo-ui-buttonElement-button):not(.oo-ui-buttonElement-button *) {
+        background-color: #303030!important;
     }
 
     span {
