@@ -282,7 +282,7 @@
     }
 
     .oo-ui-buttonElement-button,
-    .oo-ui-inputWidget-input,
+    .oo-ui-inputWidget-input:not(textarea):not(input),
     .vjs-control-bar > *,
     .vjs-volume-control,
     .mw-tmh-play {
