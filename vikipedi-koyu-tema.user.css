@@ -67,8 +67,8 @@
     .navbox,
     .navbox-subgroup,
     .thumbinner,
-    .catlinks
-    {
+    .catlinks,
+    .vector-menu-dropdown .vector-menu-content {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
@@ -106,9 +106,14 @@
     }
 
     .mw-wiki-logo:hover,
-    .mw-logo-icon:hover {
+    .mw-logo-icon:hover,
+    .mw-ui-icon:hover {
         background-color: white!important;
         filter: invert(100%) saturate(0) hue-rotate(180deg)!important;
+    }
+
+    .mw-ui-icon:before {
+        filter: invert(50%) saturate(0) hue-rotate(180deg)!important;
     }
 
     #mp-upper *,
@@ -540,7 +545,8 @@
         border: 1px dashed #04ff00!important;
     }
 
-    .oo-ui-optionWidget:hover {
+    .oo-ui-optionWidget:hover,
+    .oo-ui-pendingElement-pending {
         background-color: #3c3c3c!important;
     }
 
