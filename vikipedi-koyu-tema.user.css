@@ -68,7 +68,9 @@
     .navbox-subgroup,
     .thumbinner,
     .catlinks,
-    .vector-menu-dropdown .vector-menu-content {
+    .vector-menu-dropdown .vector-menu-content,
+    .plainlinks,
+    .skin-vector .uls-menu *{
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
