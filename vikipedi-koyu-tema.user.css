@@ -68,7 +68,8 @@
     .navbox-subgroup,
     .thumbinner,
     .catlinks,
-    .vector-menu-dropdown .vector-menu-content {
+    .vector-menu-dropdown .vector-menu-content,
+    .mw-notification {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
