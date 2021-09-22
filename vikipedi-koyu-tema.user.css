@@ -675,7 +675,9 @@ url-prefix("https://tr.wikipedia.org/w/index.php?title=Özel:ContentTranslation"
 
     /* Suggestion/translation Lists */
     .cx-suggestionlist__header,
-    .cx-translationlist__header {
+    .cx-translationlist__header,
+    .translation-filter,
+    .cx-skin-menu-dropdown * {
         background-color: #242424!important;
     }
 
@@ -724,6 +726,11 @@ url-prefix("https://tr.wikipedia.org/w/index.php?title=Özel:ContentTranslation"
     .translation-filter {
         border: 1px dashed #aaa!important;
         margin-bottom: 10px;
+    }
+
+    .cx-skin-menu-dropdown .cx-skin-menu-indicator {
+        background-color: white!important;
+        filter: invert(85%) saturate(0) hue-rotate(0deg);
     }
 
     body > div.ve-init-target-visual.ve-init-target.ve-init-mw-target.ve-init-mw-cxTarget.ve-init-target-ctrl-meta-down > div > div.cx-widget__columns.oo-ui-layout.oo-ui-horizontalLayout > div.cx-translation-view-container.oo-ui-layout.oo-ui-panelLayout.oo-ui-stackLayout.oo-ui-stackLayout-continuous > div.cx-translation-view-header.oo-ui-layout.oo-ui-panelLayout > div > div > div > div > div.oo-ui-toolbar-tools > div > div > span.oo-ui-widget.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-tool.oo-ui-tool-name-publish.oo-ui-tool-with-label.oo-ui-widget-enabled > a {
