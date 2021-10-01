@@ -154,10 +154,10 @@
     #searchform,
     #searchform *,
     .suggestions * {
-        background-color: #723100!important;
-        color: #f00!important;
+        background-color: #242424!important;
+        color: #fff!important;
     }
-
+    
     .suggestions *:hover {
         background-color: #ab4a00!important;
     }
@@ -622,6 +622,35 @@
     span.comment {
         color: #ede900!important;
     }
+
+    .wvui-input__start-icon {
+        height: 90%;
+        top: 2px;
+    }
+
+    #searchButton,
+    .searchButton {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .wvui-input__input:not([disabled]):focus,
+    .wvui-input__input:not([disabled]){
+        border: none;
+        box-shadow: none;
+    }
+    
+    .wvui-typeahead-search__submit{
+        opacity: 1;
+        margin-left: -10px;
+        z-index: 1;
+    }
+    
+    #searchform > button:hover{
+        background-color: #00ff0038!important;
+    }
+    
+    
 }
 
 @-moz-document url-prefix("https://tr.wikipedia.org/wiki/Special:ContentTranslation"),
