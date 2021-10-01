@@ -70,7 +70,8 @@
     .catlinks,
     .vector-menu-dropdown .vector-menu-content,
     .mw-notification,
-    .uls-menu *{
+    .uls-menu *,
+    .plainlinks {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
@@ -271,7 +272,7 @@
     .mw-logo-tagline,
     #mw-sidebar-button,
     .uls-search-label,
-    #uls-settings-block *{
+    #uls-settings-block * {
         filter: invert(100%);
         background-color: #fff!important;
     }
