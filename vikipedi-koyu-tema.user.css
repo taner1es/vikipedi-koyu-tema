@@ -68,7 +68,10 @@
     .navbox-subgroup,
     .thumbinner,
     .catlinks,
-    .vector-menu-dropdown .vector-menu-content {
+    .vector-menu-dropdown .vector-menu-content,
+    .mw-notification,
+    .uls-menu *,
+    .plainlinks {
         background-color: var(--background-color-1)!important;
         color: var(--color-1)!important;
     }
@@ -151,10 +154,10 @@
     #searchform,
     #searchform *,
     .suggestions * {
-        background-color: #723100!important;
-        color: #f00!important;
+        background-color: #242424!important;
+        color: #fff!important;
     }
-
+    
     .suggestions *:hover {
         background-color: #ab4a00!important;
     }
@@ -267,7 +270,9 @@
 
     .mw-logo-wordmark,
     .mw-logo-tagline,
-    #mw-sidebar-button {
+    #mw-sidebar-button,
+    .uls-search-label,
+    #uls-settings-block * {
         filter: invert(100%);
         background-color: #fff!important;
     }
@@ -617,6 +622,35 @@
     span.comment {
         color: #ede900!important;
     }
+
+    .wvui-input__start-icon {
+        height: 90%;
+        top: 2px;
+    }
+
+    #searchButton,
+    .searchButton {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .wvui-input__input:not([disabled]):focus,
+    .wvui-input__input:not([disabled]){
+        border: none;
+        box-shadow: none;
+    }
+    
+    .wvui-typeahead-search__submit{
+        opacity: 1;
+        margin-left: -10px;
+        z-index: 1;
+    }
+    
+    #searchform > button:hover{
+        background-color: #00ff0038!important;
+    }
+    
+    
 }
 
 @-moz-document url-prefix("https://tr.wikipedia.org/wiki/Special:ContentTranslation"),
@@ -675,7 +709,9 @@ url-prefix("https://tr.wikipedia.org/w/index.php?title=Özel:ContentTranslation"
 
     /* Suggestion/translation Lists */
     .cx-suggestionlist__header,
-    .cx-translationlist__header {
+    .cx-translationlist__header,
+    .translation-filter,
+    .cx-skin-menu-dropdown * {
         background-color: #242424!important;
     }
 
@@ -724,6 +760,11 @@ url-prefix("https://tr.wikipedia.org/w/index.php?title=Özel:ContentTranslation"
     .translation-filter {
         border: 1px dashed #aaa!important;
         margin-bottom: 10px;
+    }
+
+    .cx-skin-menu-dropdown .cx-skin-menu-indicator {
+        background-color: white!important;
+        filter: invert(85%) saturate(0) hue-rotate(0deg);
     }
 
     body > div.ve-init-target-visual.ve-init-target.ve-init-mw-target.ve-init-mw-cxTarget.ve-init-target-ctrl-meta-down > div > div.cx-widget__columns.oo-ui-layout.oo-ui-horizontalLayout > div.cx-translation-view-container.oo-ui-layout.oo-ui-panelLayout.oo-ui-stackLayout.oo-ui-stackLayout-continuous > div.cx-translation-view-header.oo-ui-layout.oo-ui-panelLayout > div > div > div > div > div.oo-ui-toolbar-tools > div > div > span.oo-ui-widget.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-tool.oo-ui-tool-name-publish.oo-ui-tool-with-label.oo-ui-widget-enabled > a {
