@@ -19,8 +19,12 @@
         --color-1: #19ff00;
     }
 
-    *:not(figure *) {
+    * {
         border-radius: 5px!important;
+    }
+
+    figure * {
+        border-radius: inherit!important;
     }
 
     body,
@@ -157,14 +161,19 @@
         background-color: #242424!important;
         color: #fff!important;
     }
-    
+
     .suggestions *:hover {
         background-color: #ab4a00!important;
     }
 
     .oo-ui-popupWidget-body > div > a:hover,
-    .oo-ui-popupWidget-body > div > a:hover *:not(.oo-ui-buttonElement-button):not(.oo-ui-buttonElement-button *) {
+    .oo-ui-popupWidget-body > div > a:hover * {
         background-color: #303030!important;
+    }
+
+    .oo-ui-popupWidget-body > div > a:hover .oo-ui-buttonElement-button,
+    .oo-ui-popupWidget-body > div > a:hover .oo-ui-buttonElement-button * {
+        background-color: inherit!important;
     }
 
     span {
@@ -260,7 +269,7 @@
     }
 
     .globegris {
-        background-image: url(/static/images/project-logos/trwiki.png);
+        background-image: url(https://tr.wikipedia.org/static/images/project-logos/trwiki.png);
         background-position: 10px 0px!important;
     }
 
@@ -635,22 +644,20 @@
     }
 
     .wvui-input__input:not([disabled]):focus,
-    .wvui-input__input:not([disabled]){
+    .wvui-input__input:not([disabled]) {
         border: none;
         box-shadow: none;
     }
-    
-    .wvui-typeahead-search__submit{
+
+    .wvui-typeahead-search__submit {
         opacity: 1;
         margin-left: -10px;
         z-index: 1;
     }
-    
-    #searchform > button:hover{
+
+    #searchform > button:hover {
         background-color: #00ff0038!important;
     }
-    
-    
 }
 
 @-moz-document url-prefix("https://tr.wikipedia.org/wiki/Special:ContentTranslation"),
