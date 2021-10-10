@@ -44,6 +44,7 @@
 	#toc,
 	#firstHeading,
 	#mw-fr-revisiontag-edit,
+	#content .gallerybox div.thumb,
 	.cx-translation-view,
 	.cx-pagetitle.oo-ui-textInputWidget textarea,
 	.oo-ui-toolbar-bar,
@@ -75,7 +76,8 @@
 	.uls-menu *,
 	.plainlinks,
 	.mw-parser-output .mod-gallery .gallerybox div,
-	.collection-warning-box {
+	.collection-warning-box,
+	.mw-parser-output .module-shortcutboxplain {
 		background-color: var(--background-color-1)!important;
 		color: var(--color-1)!important;
 	}
@@ -219,6 +221,14 @@
 	a:hover,
 	.CategoryTreeToggleHandlerAttached:hover {
 		color: #0fd!important;
+	}
+
+	b {
+		color: #8c00ff!important;
+	}
+
+	b > a {
+		color: #0079c4!important;
 	}
 
 	span.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
