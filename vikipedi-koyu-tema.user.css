@@ -42,7 +42,6 @@
 	#mp-tfa,
 	#mw-panel,
 	#toc,
-	#firstHeading,
 	#mw-fr-revisiontag-edit,
 	#content .gallerybox div.thumb,
 	.cx-translation-view,
@@ -77,14 +76,26 @@
 	.plainlinks,
 	.mw-parser-output .mod-gallery .gallerybox div,
 	.collection-warning-box,
-	.mw-parser-output .module-shortcutboxplain {
+	.mw-parser-output .module-shortcutboxplain,
+	.mwe-popups-container {
 		background-color: var(--background-color-1)!important;
 		color: var(--color-1)!important;
 	}
 
+	table.mw-changeslist-line,
+	.mw-contributions-list li {
+		margin: 5px;
+	}
+
+	table.mw-changeslist-line {
+		outline: 1px solid #4f4f4f;
+		border: none!important;
+	}
+
 	.collection-box-disabled,
 	.collection-box-disabled > * > .mw-headline,
-	.collection-box-disabled > * * {
+	.collection-box-disabled > * *,
+	.cnotice-message p {
 		color: var(--color-disabled)!important;
 		filter: brightness(85%);
 	}
@@ -103,6 +114,14 @@
 	#centralNotice div {
 		background-image: none!important;
 		background-color: inherit!important;
+	}
+
+	.vector-user-links * {
+		padding-right: 3px;
+	}
+
+	#right-navigation > div#p-page {
+		z-index: 0!important;
 	}
 
 	img {
@@ -132,30 +151,51 @@
 		margin-bottom: 15px;
 	}
 
-	.mw-wiki-logo,
+	.mw-ui-icon,
+	.oo-ui-icon,
+	span.oo-ui-iconElement-icon,
+	span.oo-ui-iconElement-icon,
+	span.oo-ui-indicatorElement-indicator {
+		background-color: revert!important;
+		filter: invert(100%) brightness(50%)!important;
+	}
+
+	.mw-ui-icon:hover,
+	.oo-ui-icon:hover,
+	span.oo-ui-iconElement-icon:hover,
+	span.oo-ui-iconElement-icon:hover,
+	span.oo-ui-indicatorElement-indicator:hover {
+		background-color: revert!important;
+		filter: invert(100%) brightness(100%)!important;
+	}
+
+	img.mw-wiki-logo,
 	.mw-logo-icon,
-	.oo-ui-icon-tray,
-	.mw-ui-icon-tray:before,
-	.oo-ui-icon-bell,
-	.mw-ui-icon-bell:before {
-		background-color: white!important;
-		filter: invert(100%) saturate(40) hue-rotate(180deg);
+	.mw-logo-wordmark,
+	.mw-logo-tagline,
+	#mw-sidebar-button,
+	.uls-search-label,
+	#uls-settings-block * {
+		background-color: revert!important;
+		filter: invert(100%) brightness(50%) hue-rotate(180deg) saturate(20) !important;
 	}
 
-	.mw-wiki-logo:hover,
+	img.mw-wiki-logo:hover,
 	.mw-logo-icon:hover,
-	.mw-ui-icon:hover {
-		background-color: white!important;
-		filter: invert(100%) saturate(0) hue-rotate(180deg)!important;
+	.mw-logo-wordmark:hover,
+	.mw-logo-tagline:hover,
+	#mw-sidebar-button:hover,
+	.uls-search-label:hover,
+	#uls-settings-block *:hover {
+		background-color: revert!important;
+		filter: invert(100%) brightness(100%) hue-rotate(180deg) saturate(40) !important;
 	}
 
-	.mw-ui-icon:before {
-		filter: invert(50%) saturate(0) hue-rotate(180deg)!important;
-	}
-
-	#mp-upper *,
+	.mw-logo-wordmark:hover #mp-upper *,
+	#mp-upper,
+	#mp-upper table,
 	#mp-lower * {
-		border: 0px!important;
+		border: none!important;
 	}
 
 	table.ambox-content {
@@ -165,16 +205,17 @@
 	.flaggedrevs-unreviewed {
 		background-color: #002847!important;
 		border: 1px dashed #f00!important;
+		width: fit-content;
 	}
 
 	.flaggedrevs-pending {
 		background-color: #484c00!important;
 		border: 1px dashed #f2ff00!important;
+		width: fit-content;
 	}
 
 	.flaggedrevs-color-1 {
-		background-color: #003602!important;
-		border: 0px!important;
+		background-color: inherit!important;
 	}
 
 	.oo-ui-labelElement-label {
@@ -277,6 +318,7 @@
 	.toctext,
 	#mw-toc-heading,
 	#searchInput,
+	#firstHeading,
 	.suggestions * {
 		color: yellow!important;
 	}
@@ -302,20 +344,12 @@
 		background-color: rgba(34, 254, 89, 0)!important;
 	}
 
-	.mw-logo-wordmark,
-	.mw-logo-tagline,
-	#mw-sidebar-button,
-	.uls-search-label,
-	#uls-settings-block * {
-		filter: invert(100%);
-		background-color: #fff!important;
-	}
-
 	.mw-htmlform-ooui-wrapper {
-		background-color: #595959!important;
+		width: max-content!important;
 	}
 
-	span.oo-ui-iconElement-noIcon {
+	span.oo-ui-iconElement-noIcon,
+	a.mwe-popups-extract::after {
 		display: none!important;
 	}
 
@@ -551,8 +585,7 @@
 	}
 
 	#pt-notifications-alert > a,
-	#pt-notifications-notice > a,
-	.oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator {
+	#pt-notifications-notice > a {
 		background-color: #ff0!important;
 	}
 
@@ -669,7 +702,8 @@
 	}
 
 	.wvui-input__input:not([disabled]):focus,
-	.wvui-input__input:not([disabled]) {
+	.wvui-input__input:not([disabled]),
+	.mw-ui-button.mw-ui-quiet:focus {
 		border: none;
 		box-shadow: none;
 	}
@@ -682,6 +716,10 @@
 
 	#searchform > button:hover {
 		background-color: #00ff0038!important;
+	}
+
+	.mw-rcfilters-ui-highlights-color-none {
+		border: 3px solid #ffed00!important;
 	}
 }
 
