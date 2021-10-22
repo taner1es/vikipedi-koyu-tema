@@ -594,8 +594,8 @@
 	}
 
 	.oo-ui-toolbar-bar * {
-		background-color: #a69d00!important;
-		color: black!important;
+		background-color: #0f0f0f!important;
+		color: #fff!important;
 	}
 
 	.oo-ui-toolbar-bar * * {
@@ -607,9 +607,7 @@
 	.oo-ui-tool-link:hover,
 	.oo-ui-barToolGroup-tools > .oo-ui-tool > .oo-ui-tool-link:hover,
 	.oo-ui-buttonElement-button:hover {
-		background-color: #aa6f00!important;
-		border: 1px dashed #fffb00!important;
-		border-style: inset;
+		background-color: #373737!important;
 	}
 
 	.oo-ui-buttonElement-active .oo-ui-buttonElement-button {
@@ -703,7 +701,9 @@
 
 	.wvui-input__input:not([disabled]):focus,
 	.wvui-input__input:not([disabled]),
-	.mw-ui-button.mw-ui-quiet:focus {
+	.mw-ui-button.mw-ui-quiet:focus,
+	.oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover,
+	.oo-ui-menuToolGroup {
 		border: none;
 		box-shadow: none;
 	}
@@ -720,6 +720,14 @@
 
 	.mw-rcfilters-ui-highlights-color-none {
 		border: 3px solid #ffed00!important;
+	}
+
+	.ve-ui-mwReferenceResultWidget-shield {
+		position: relative!important;
+	}
+
+	.oo-ui-checkboxInputWidget [type='checkbox'] {
+		opacity: 1;
 	}
 }
 
