@@ -25,7 +25,7 @@
 ## Görünüm
 
 ### Anasayfa
-<img src="images/ss.png" alt="önizleme" width="100%"/>
+<img src="images/ss.jpeg" alt="önizleme" style="width:100%; border-radius: 10px; border: 2px white solid;"/>
 
 ### Madde
-<img src="images/ss2.png" alt="önizleme" width="100%"/>
+<img src="images/ss2.jpeg" alt="önizleme" style="width:100%; border-radius: 10px; border: 2px white solid;"/>
